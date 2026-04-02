@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio De Trabajo | Odalis Aranda</title>
+    <meta name="description"
+        content="Portafolio profesional de Guadalupe Odalis Aranda Montaño - Especialista en Front-end y Desarrollo de Sistemas.">
+    <!-- Modern SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- User should replace or I can use SVG -->
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">GO<span>AM</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#certificates">Certificados</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="vh-100">
+        <div class="container hero-content">
+            <h2 class="reveal">Hola, soy</h2>
+            <h1 class="reveal delay-1">Guadalupe Odalis <span>Aranda Montaño</span></h1>
+            <p class="reveal delay-2">Estudiante de Ingeniería en Sistemas Computacionales | Especialista en Desarrollo
+                Front-end & UX/UI</p>
+            <div class="hero-btns reveal delay-3">
+                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Estudiante de octavo semestre de Ingeniería en Sistemas Computacionales con interés en el
+                        desarrollo de software, diseño de interfaces y tecnología aplicada al bienestar de las personas.
+                    </p>
+                    <p>Me caracterizo por ser creativa, resiliente y comprometida con la mejora continua. Disfruto
+                        combinar lo técnico con lo visual, buscando crear soluciones funcionales y atractivas.</p>
+                    <div class="skills-tags">
+                        <span>Programación</span>
+                        <span>UX/UI</span>
+                        <span>Bases de Datos</span>
+                        <span>Trabajo en Equipo</span>
+                        <span>Resolución de Problemas</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>8vo</h3>
+                        <p>Semestre</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Excelencia</h3>
+                        <p>Académica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid featured-grid">
+                <!-- Zenith (Featured) -->
+                <div class="project-card reveal featured">
+                    <div class="project-multimedia">
+                        <div class="media-tabs" data-project="zenith">
+                            <button class="media-tab active" data-type="video" data-src="Recursos/ZenitApp.mp4"
+                                data-poster="Recursos/Zenit1.png">App Demo</button>
+                            <button class="media-tab" data-type="video" data-src="Recursos/ZenithAnuncio.mp4"
+                                data-poster="Recursos/ZenithWeb_1.png">Campaña</button>
+                            <button class="media-tab" data-type="gallery" data-target="zenith-gallery-container">Galería</button>
+                        </div>
+
+                        <div class="media-display">
+                            <div id="zenith-player-container" class="video-frame">
+                                <video id="zenith-video" controls poster="Recursos/Zenit1.png">
+                                    <source src="Recursos/ZenitApp.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div id="zenith-gallery-container" class="gallery-v3 hidden">
+                                <div class="gallery-nav-container">
+                                    <button class="nav-btn prev" onclick="scrollGallery('zenith-gallery-container', -1)">❮</button>
+                                    <div class="gallery-scroll-wrapper">
+                                        <div class="gallery-grid">
+                                            <img src="Recursos/Zenit1.png" alt="Zenith App: Interfaz de monitoreo emocional">
+                                            <img src="Recursos/Zenit2.png" alt="Zenith App: Registro de actividades diarias">
+                                            <img src="Recursos/ZenithWeb_1.png" alt="Zenith Web: Dashboard principal de administración">
+                                            <img src="Recursos/Zenith_2web.png" alt="Zenith Web: Análisis visual de datos">
+                                            <img src="Recursos/Zenith_Web4.png" alt="Zenith Web: Gestión de perfiles de usuario">
+                                            <img src="Recursos/Zenith_Web5.png" alt="Zenith Web: Reportes mensuales de bienestar">
+                                        </div>
+                                    </div>
+                                    <button class="nav-btn next" onclick="scrollGallery('zenith-gallery-container', 1)">❯</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="category-tag">Proyecto Estrella - Salud Mental</div>
+                        <h3>Zenith: Bienestar Emocional</h3>
+                        <p>Plataforma integral diseñada para el acompañamiento psicológico, integrando sistemas móviles y web.</p>
+                        <div class="tags">
+                            <span>Full Stack</span>
+                            <span>UX UI</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HPE (Featured) -->
+                <div class="project-card reveal featured">
+                    <div class="project-multimedia">
+                        <div class="media-tabs" data-project="hpe">
+                            <button class="media-tab active" data-type="gallery" data-target="hpe-gallery-presentacion">Presentación GDL</button>
+                            <button class="media-tab" data-type="gallery" data-target="hpe-gallery-capturas">Capturas & IA</button>
+                        </div>
+                        
+                        <div class="media-display">
+                            <div id="hpe-gallery-presentacion" class="gallery-v3">
+                                <div class="gallery-nav-container">
+                                    <button class="nav-btn prev" onclick="scrollGallery('hpe-gallery-presentacion', -1)">❮</button>
+                                    <div class="gallery-scroll-wrapper">
+                                        <div class="gallery-grid">
+                                            <img src="Recursos/HPE.png" alt="Equipo HPE: Presentación oficial del proyecto en Guadalajara">
+                                            <img src="Recursos/Pre_HPE2.jpeg" alt="Sesión de preguntas y respuestas en HPE GDL">
+                                        </div>
+                                    </div>
+                                    <button class="nav-btn next" onclick="scrollGallery('hpe-gallery-presentacion', 1)">❯</button>
+                                </div>
+                            </div>
+                            
+                            <div id="hpe-gallery-capturas" class="gallery-v3 hidden">
+                                <div class="gallery-nav-container">
+                                    <button class="nav-btn prev" onclick="scrollGallery('hpe-gallery-capturas', -1)">❮</button>
+                                    <div class="gallery-scroll-wrapper">
+                                        <div class="gallery-grid">
+                                            <img src="Recursos/logion.png" alt="HPE App: Pantalla de autenticación segura">
+                                            <img src="Recursos/Hpe_Proyec}.png" alt="HPE App: Vista general del dashboard de IA">
+                                            <img src="Recursos/3.png" alt="HPE App: Gestión de contactos y POCs">
+                                            <img src="Recursos/ia_hpe}.png" alt="HPE App: Interfaz del asistente de IA para optimización">
+                                        </div>
+                                    </div>
+                                    <button class="nav-btn next" onclick="scrollGallery('hpe-gallery-capturas', 1)">❯</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="category-tag">Proyecto Corporativo - HPE GDL</div>
+                        <div class="award-badge"><i class="fas fa-trophy"></i> 2° Lugar en Innovación</div>
+                        <h3>HPE Performance</h3>
+                        <p>Plataforma empresarial galardonada por su innovación en la optimización del rendimiento asistida por IA. Este proyecto destacó en HPE Guadalajara por su capacidad de automatizar flujos complejos y mejorar la toma de decisiones basada en datos.</p>
+                        <div class="tags">
+                            <span>Enterprise</span>
+                            <span>AI Integrated</span>
+                            <span>Cloud architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistema de Gestión - WIDE CARD -->
+                <div class="project-card wide-card reveal">
+                    <div class="project-multimedia">
+                        <div class="media-display">
+                            <div id="sge-gallery-container" class="gallery-v3">
+                                <div class="gallery-nav-container">
+                                    <button class="nav-btn prev" onclick="scrollGallery('sge-gallery-container', -1)">❮</button>
+                                    <div class="gallery-scroll-wrapper">
+                                        <div class="gallery-grid">
+                                            <img src="Recursos/SII_Login.png" alt="SGE SII: Interfaz de Inicio de Sesión Institucional">
+                                            <img src="Recursos/Sii_1.png" alt="SGE SII: Panel Administrativo Principal">
+                                            <img src="Recursos/Sii_2.png" alt="SGE SII: Gestión de Expedientes y Documentación">
+                                            <img src="Recursos/Sii3.png" alt="SGE SII: Módulo de Reinscripciones Académicas">
+                                            <img src="Recursos/Sii4.png" alt="SGE SII: Reportes y Analíticas del Tecnológico">
+                                        </div>
+                                    </div>
+                                    <button class="nav-btn next" onclick="scrollGallery('sge-gallery-container', 1)">❯</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-badge badge-current">PROYECTO EN CURSO</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="info-content-wide">
+                            <div class="text-side">
+                                <h3>Gestión Tecnológico (SGE)</h3>
+                                <div class="role-badge">Front-end Developer</div>
+                                <p>Como parte del equipo de desarrollo, mi enfoque principal ha sido la **arquitectura y el diseño del Front-end**. Este nuevo sistema integral moderniza la experiencia digital de estudiantes y personal administrativo, centralizando procesos académicos complejos en una plataforma web intuitiva y escalable mediante React y componentes modernos.</p>
+                            </div>
+                            <div class="tags-side">
+                                <div class="tags">
+                                    <span>React/JS Specialist</span>
+                                    <span>Sistema SII</span>
+                                    <span>UX/UI Focus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra Projects Section -->
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <h3 class="extra-title">Otros Proyectos y Prácticas</h3>
+                <span class="divider-line"></span>
+            </div>
+
+            <div class="projects-grid extra-grid">
+                <!-- AWS / IA -->
+                <div class="project-card reveal">
+                    <div class="project-img-container">
+                        <img src="Recursos/AWS.jpeg" alt="Participación en Mentoría AWS & IA" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="status-badge badge-cert">AWS CLOUD</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Club AWS & Mentoría IA</h3>
+                        <p>Desarrollo de proyectos con IA generativa, incluyendo una **competencia de creación de videojuegos utilizando Amazon Q** mediante ingeniería de prompts. Experiencia práctica en soluciones de arquitectura cloud y mentoría avanzada.</p>
+                        <div class="tags">
+                            <span>Amazon Q</span>
+                            <span>Prompt Engineering</span>
+                            <span>GenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title">Logros y Certificaciones</h2>
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <img src="Recursos/Reconocimiento_HPE.jpeg" alt="Reconocimiento HPE 2do Lugar Innovación">
+                    <h3>2° Lugar en Innovación HPE</h3>
+                    <p>Reconocimiento oficial por el desarrollo de soluciones disruptivas en HPE Guadalajara.</p>
+                </div>
+                <div class="cert-card reveal delay-1">
+                    <img src="Recursos/Oracle.png" alt="Oracle APEX">
+                    <h3>Concurso Oracle (Low Code)</h3>
+                    <p>Representación institucional en el desarrollo de soluciones con Oracle APEX.</p>
+                </div>
+                <div class="cert-card reveal delay-2">
+                    <img src="Recursos/Scrum.png" alt="Scrum Certificate">
+                    <h3>Fundamentos de Scrum</h3>
+                    <p>Conocimientos sólidos en metodologías ágiles para la gestión de proyectos.</p>
+                </div>
+                <div class="cert-card reveal delay-3">
+                    <img src="Recursos/Zenith_Pre.jpeg" alt="Presentación Zenith CBTis 49">
+                    <h3>Presentaciones y Divulgación</h3>
+                    <p>Presentación oficial del proyecto Zenith ante estudiantes del CBTis 49 de Ocotlán, Jalisco, compartiendo experiencias sobre el impacto tecnológico.</p>
+                </div>
+                <!-- LinkedIn Network & Cyber -->
+                <div class="cert-card reveal">
+                    <img src="Recursos/Conceptos_Basicos_Redes.jpeg" alt="Conceptos Básicos Redes">
+                    <h3>Conceptos Básicos de Redes</h3>
+                    <p>Fundamentos sólidos en infraestructura y protocolos de comunicación digital.</p>
+                </div>
+                <div class="cert-card reveal delay-1">
+                    <img src="Recursos/DireccionamientoDeRed.jpeg" alt="Direccionamiento de Red">
+                    <h3>Direccionamiento de Red</h3>
+                    <p>Especialización en IPv4, IPv6 y segmentación de redes para entornos corporativos.</p>
+                </div>
+                <div class="cert-card reveal delay-2">
+                    <img src="Recursos/Introduccion_a_Ciberseguridad.jpeg" alt="Introducción Ciberseguridad">
+                    <h3>Introducción a la Ciberseguridad</h3>
+                    <p>Principios esenciales de protección de datos y mitigación de amenazas digitales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <p>odalisam0319@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📱</span>
+                        <p>+52 392 105 7584</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">🔗</span>
+                        <a href="https://www.linkedin.com/in/ACoAAEnj9s0Bf65fWsxZgoR6l2vlh6VzKhiYJ2M"
+                            target="_blank">LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Guadalupe Odalis Aranda Montaño. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox for Image Zoom -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Zoomed view">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
